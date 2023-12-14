@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>LOG IN FORM</title>
+</head>
+<div class="wrapper">
+    <div class="top-card">
+        <form action="">
+            <h4 class="header-title">Sign In</h4>
+            <label for="user">Username or email</label><br>
+            <input type="email" id="user" required><br><br>
+            <label for="psw">Password</label> <br>
+            <input type="password" id="user" required>
+            <div class="buttom-side">
+                <button type="submit">Sign In</button>
+                <p class="frg">Forgot Your Password ?</p>
+            </div>
+            <p class="footer">Don't Have an account ? <br> <a href="#">Sign up</a></p>
+    </div>
+    </form>
+
+    <div class="buttom-card">
+
+    </div>
+</div>
+
+<button class="dark-mode">
+    Switch Theme
+</button>
+
+
+<script>
+    const darkMode = document.querySelector('.dark-mode');
+    const whiteMode = document.querySelector('.white-mode');
+    darkMode.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    }
+    )
+</script>
